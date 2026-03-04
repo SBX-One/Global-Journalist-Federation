@@ -1,6 +1,6 @@
-type ButtonVariant = "base" | "outline";
-export type ButtonProps = {
-    text: string;
-    onClick: () => void;
-    variant?: ButtonVariant;
+export type HighlightProps = {
+    date: string;
+    country: string;
+    desc: string;
+    image: string;
 }

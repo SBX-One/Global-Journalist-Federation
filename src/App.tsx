@@ -1,10 +1,11 @@
-import Button from "./components/button"
+import HomePage from "./view/HomePage"
+import Highlight from "./view/Highlight"
 
 export default function App() {
   return (
     <div>
-      <Button text="click me" onClick={() => console.log("clicked")}></Button>
-      <h1 className="font-family-sans text-display">hello</h1>
+      <HomePage />
+      <Highlight />
     </div>
   )
 }
