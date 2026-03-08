@@ -2,7 +2,46 @@
 
 @theme {
     --text-journalist-size: 32px;
+    --text-journalist-xl: 80px;
+    --text-journalist-md: 16px;
+    --text-journalist-display: 27px;
     --color-journalist-green: #4ABC40;
     --color-journalist-gray: #DEDEDE;
     --color-journalist-gray-text: #737780;
+    --color-journalist-gray-100: #F0F0F0;
+    --color-journalist-gray-200: #C7C9CC;
+    --color-journalist-gray-300: #F6F6F6;
+    --color-journalist-red-error: #FF0000;
+    --color-journalist-border-default: #E3E4E6;
+    --color-journalist-report-surface: #FFE6E6;
+    --color-journalist-black: #161616;
+    --font-generalSans-bold: 'GeneralSans-Bold', sans-serif;
+    --font-generalSans-medium: 'GeneralSans-Medium', sans-serif;
+    --font-generalSans-regular: 'GeneralSans-Regular', sans-serif;
+}
+
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('./assets/fonts/general-sans/GeneralSans-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('./assets/fonts/general-sans/GeneralSans-Medium.otf');
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('./assets/fonts/general-sans/GeneralSans-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GeneralSans';
+    font-weight: normal;
 }
