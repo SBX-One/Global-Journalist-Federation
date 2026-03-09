@@ -24,5 +24,13 @@ export type LatestFromUsCardProps = {
     date: string;
     name: string;
     jabatan: string;
-    
+}
+
+export type LatestNewsCardProps = {
+    image: string;
+    title: string;
+    desc: string;
+    name: string;
+    theme: string;
+    location: string;
 }

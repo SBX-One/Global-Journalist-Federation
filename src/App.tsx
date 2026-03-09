@@ -5,6 +5,8 @@ import Figure from "./view/Figure"
 import ActNow from "./view/ActNow"
 import LatestFromUs from "./view/LatestFromUs"
 import ActingNow from "./view/ActingNow"
+import LatestNews from "./view/LatestNews"
+import Footer from "./view/footer"
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
       <ActNow />
       <LatestFromUs />
       <ActingNow />
+      <LatestNews />
+      <Footer />
     </div>
   )
 }

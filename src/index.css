@@ -18,6 +18,7 @@
     --font-generalSans-bold: 'GeneralSans-Bold', sans-serif;
     --font-generalSans-medium: 'GeneralSans-Medium', sans-serif;
     --font-generalSans-regular: 'GeneralSans-Regular', sans-serif;
+    --breakpoint-jdm: 743px
 }
 
 @font-face {
