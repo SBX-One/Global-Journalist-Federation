@@ -95,16 +95,16 @@ export default function LatestNews() {
     }
 
     return (
-        <div className="px-5 mt-40">
-            <div className="mb-10">
-                <div className="">
-                    <img src={Search} alt="" className="absolute" />
+        <div className="px-5 jdm:px-10 mt-40">
+            <div className="mb-10 flex flex-col jdm:flex-row gap-4 items-end">
+                <div className="relative flex-2 w-full jdm:mt-4">
+                    <img src={Search} alt="" className="absolute top-1/2 -translate-y-1/2" />
                     <input type="text" placeholder="Search" className="w-full py-4.25 pl-15 border rounded-xl border-journalist-border-default" />
                 </div>
-                <div className="flex flex-row w-full gap-2 mt-4">
-                    <div className="relative flex-1">
-                        <img src={ChevronDown} className="absolute left-25 top-1/2 -translate-y-1/2 h-6 w-6" alt="" />
-                        <button onClick={() => setIsCountryOpen(!isCountryOpen)} className="py-4.25 w-full flex pl-6  border border-journalist-border-default rounded-xl text-journalist-text-default font-thin">
+                <div className="flex flex-row w-full jdm:w-auto gap-2 mt-4 jdm:mt-0">
+                    <div className="relative flex-1 jdm:max-w-36">
+                        <img src={ChevronDown} className="absolute right-4 top-1/2 -translate-y-1/2 h-6 w-6" alt="" />
+                        <button onClick={() => setIsCountryOpen(!isCountryOpen)} className="py-4.25 w-full flex pl-6 pr-10 border border-journalist-border-default rounded-xl text-journalist-text-default font-thin truncate">
                             {selectedCountry}
                         </button>
                         {isCountryOpen && (
@@ -121,9 +121,9 @@ export default function LatestNews() {
                             </div>
                         )}
                     </div>
-                    <div className="relative flex-1">
-                        <img src={ChevronDown} className="absolute left-20 top-1/2 -translate-y-1/2 h-6 w-6" alt="" />
-                        <button onClick={() => setIsDateOpen(!isDateOpen)} className="py-4.25 w-full flex pl-6 border border-journalist-border-default rounded-xl text-journalist-text-default">
+                    <div className="relative flex-1 jdm:max-w-36">
+                        <img src={ChevronDown} className="absolute right-4 top-1/2 -translate-y-1/2 h-6 w-6" alt="" />
+                        <button onClick={() => setIsDateOpen(!isDateOpen)} className="py-4.25 w-full flex pl-6 pr-10 border border-journalist-border-default rounded-xl text-journalist-text-default truncate">
                             {selectedDate}
                         </button>
                         {isDateOpen && (
@@ -142,7 +142,7 @@ export default function LatestNews() {
                     </div>
                 </div>
             </div>
-            <div className="gap-4 flex flex-col">
+            <div className="grid grid-cols-1 jdm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {LatestNewsList.map((item, i) => (
                     <div key={i}>
                         <LatestNewsCard image={item.image} title={item.title} desc={item.desc} name={item.name} theme={item.theme} location={item.location} />

@@ -16,7 +16,7 @@ export default function LatestFromUsCard({title, desc, image, date, name, jabata
             </div>
             <p className="font-medium text-journalist-gray-text">{desc}</p>
 
-            <button className="px-5 py-3 border-2 hover:bg-gray-200 border-journalist-border-default rounded-full mt-10 flex ml-auto font-semibold">Read More</button>
+            <button className="px-5 py-3 border-2 hover:bg-gray-200 border-journalist-border-default rounded-full mt-10 flex ml-auto jdm:ml-0 font-medium">Read More</button>
         </div>
     )
 }

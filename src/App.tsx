@@ -10,7 +10,7 @@ import Footer from "./view/footer"
 
 export default function App() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <HomePage />
       <Highlight />
       <Cases />

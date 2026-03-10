@@ -33,7 +33,7 @@ export default function LatestFromUs() {
     ]
 
     return (
-        <div className="px-5">
+        <div className="px-5 jdm:px-10">
             <div className="flex flex-row justify-between pb-6 border-b border-journalist-border-default">
                 <h1 className="text-journalist-md font-medium">Latest From Us</h1>
                 <h1 className="text-journalist-red-error font-medium underline text-journalist-md">See More</h1>

@@ -9,7 +9,7 @@ export default function ActNowCard({CardType, title, desc, icon}: ActNowCardProp
     const mediaSocialList = [youtube, twitter, linkedin, facebook];
 
     return (
-        <div className="w-full p-5 border border-journalist-border-default min-h-60 flex flex-col justify-between">
+        <div className="w-full flex-1 jdm:min-w-81 p-5 border border-journalist-border-default min-h-60 flex flex-col justify-between">
             <div className="flex flex-col">
                 <img src={icon} alt="icon" className="w-6 h-6" />
                 <h1 className="font-medium text-journalist-md mt-4">{title}</h1>
