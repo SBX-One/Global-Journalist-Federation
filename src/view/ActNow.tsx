@@ -40,9 +40,9 @@ export default function ActNow() {
 
     return (
         <div className="p-5 jdm:px-10">
-            <div className="w-full relative">
-                <h1 className="text-journalist-xl font-bold absolute text-center top-9.25 -translate-x-1/2 left-1/2 -right-1/2 text-journalist-red-error">ACT NOW</h1>
-                <h1 className="text-journalist-xl font-bold text-center text-journalist-gray-100">ACT NOW</h1>
+            <div className="w-fit mx-auto relative">
+                <h1 className="text-journalist-xl font-bold absolute text-center top-9.25 jdl:top-0 jdl:left-48.25 z-10 -translate-x-1/2 left-1/2 -right-1/2 text-journalist-red-error">ACT NOW</h1>
+                <h1 className="text-journalist-xl font-bold text-center text-journalist-gray-100 jdl:-left-48.25 relative z-0">ACT NOW</h1>
             </div>
 
             <div className="flex flex-1 flex-col mt-20 gap-4 flex-wrap jdm:flex-row">

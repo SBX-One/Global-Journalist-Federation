@@ -5,6 +5,7 @@
     --text-journalist-xl: 80px;
     --text-journalist-md: 16px;
     --text-journalist-display: 27px;
+    --text-journalist-lg: 20px;
     --color-journalist-green: #4ABC40;
     --color-journalist-gray: #DEDEDE;
     --color-journalist-gray-text: #737780;
@@ -19,6 +20,7 @@
     --font-generalSans-medium: 'GeneralSans-Medium', sans-serif;
     --font-generalSans-regular: 'GeneralSans-Regular', sans-serif;
     --breakpoint-jdm: 743px;
+    --breakpoint-jdl: 1440px;
     --spacing-81: 324px;
     --spacing-45-75: 183px;
     --spacing-110-5: 442px;

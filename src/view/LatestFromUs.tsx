@@ -33,13 +33,13 @@ export default function LatestFromUs() {
     ]
 
     return (
-        <div className="px-5 jdm:px-10">
+        <div className="px-5 jdm:px-10 mt-30">
             <div className="flex flex-row justify-between pb-6 border-b border-journalist-border-default">
                 <h1 className="text-journalist-md font-medium">Latest From Us</h1>
                 <h1 className="text-journalist-red-error font-medium underline text-journalist-md">See More</h1>
             </div>
 
-            <div className="flex flex-col gap-4 mb-40">
+            <div className="flex flex-col gap-4 jdl:mb-40">
                 {LatestFromUsList.map((item, index) => (
                     <LatestFromUsCard key={index} title={item.title} desc={item.desc} image={item.image} date={item.date} name={item.name} jabatan={item.jabatan} />
                 ))}

@@ -19,7 +19,7 @@ export default function Cases() {
 
     return (
         <div className="px-5 jdm:px-10">
-            <div className="flex flex-wrap justify-between border-b border-journalist-border-default pb-10 mb-5 gap-y-12">
+            <div className="flex flex-wrap justify-between border-b border-journalist-border-default pb-10 jdl:pb-25 mb-5 jdl:mb-10 gap-y-12 jdl:px-22.25">
                 {CasesList.map((item, i) => (
                     <div key={i} className="flex relative">
                         <h1 className="absolute -top-12 font-semibold text-journalist-xl jdm:text-9xl text-journalist-gray-100 z-0">{item.totalCases}</h1>
