@@ -9,7 +9,7 @@ export default function ActingNow() {
             </div>
 
             <div>
-                <h1 className="font-medium text-journalist-md text-center mb-6 mt-4">Stay informed, register for RSF's newsletter</h1>
+                <h1 className="font-medium text-md text-center mb-6 mt-4">Stay informed, register for RSF's newsletter</h1>
                 <div className="flex flex-row gap-2 max-w-116 mx-auto">
                     <input type="email" placeholder="Your email addres" className="bg-white border-2 border-journalist-border-default w-full h-14 rounded-2xl pl-6" />
                     <img src={arrow} alt="" className="bg-black h-14 w-14 p-4 rounded-full" />

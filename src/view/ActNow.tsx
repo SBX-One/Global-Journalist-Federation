@@ -6,10 +6,10 @@ import file_text from "../assets/svg/file-text.svg"
 import hash from "../assets/svg/hash.svg"
 // import twitter from "../assets/svg/akar-icons_twitter-fill.svg"
 // import arrow from "../assets/svg/arrow-right.svg"
-import { useState } from "react"
+// import { useState } from "react"
 
 export default function ActNow() {
-    const [CardType] = useState<"button" | "link" | "social">("button")
+    // const [CardType] = useState<"button" | "link" | "social">("button")
 
     const actNowList: ActNowCardProps[] = [
         {
@@ -39,7 +39,7 @@ export default function ActNow() {
     ]
 
     return (
-        <div className="p-5 jdm:px-10">
+        <div className="p-5 jdm:px-10 mt-40">
             <div className="w-fit mx-auto relative">
                 <h1 className="text-journalist-xl font-bold absolute text-center top-9.25 jdl:top-0 jdl:left-48.25 z-10 -translate-x-1/2 left-1/2 -right-1/2 text-journalist-red-error">ACT NOW</h1>
                 <h1 className="text-journalist-xl font-bold text-center text-journalist-gray-100 jdl:-left-48.25 relative z-0">ACT NOW</h1>

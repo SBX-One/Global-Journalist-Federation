@@ -13,7 +13,7 @@ export default function Header() {
                 <div className="flex flex-row gap-4 ml-10 max-jdm:hidden">
                     {navbarMenu.map((item, i) => (
                         <div key={i} className="flex flex-row gap-2 py-2 px-3 rounded-full items-center border border-journalist-border-default">
-                            <p className="font-medium text-journalist-md">{item}</p>
+                            <p className="font-medium text-md">{item}</p>
                             <img src={arrow} alt={item} className="w-4 h-4 " />
                         </div>
                     ))}
