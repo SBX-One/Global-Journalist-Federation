@@ -3,8 +3,33 @@ import LatestFromUs_1 from "../assets/png/LatestFromUs_1.png"
 import LatestFromUs_2 from "../assets/png/LatestFromUs_2.png"
 import LatestFromUs_3 from "../assets/png/LatestFromUs_3.png"
 import LatestFromUsCard from "../components/LatestFromUsCard"
+import gsap from "gsap"
+import { useEffect } from "react"
 
 export default function LatestFromUs() {
+    useEffect(() => {
+        gsap.set(".underlineAnim", {
+            scaleX: 0,
+            transformOrigin: "left"
+        })
+    })
+
+    const handleEnter = () => {
+        gsap.to(".underlineAnim", {
+            scaleX: 1,
+            duration: 0.35,
+            ease: "power3.out"
+        })
+    }
+
+    const handleLeave = () => {
+        gsap.to(".underlineAnim", {
+            scaleX: 0,
+            duration: 0.35,
+            ease: "power3.out"
+        })
+    }
+    
     const LatestFromUsList: LatestFromUsCardProps[] = [
         {
             title: "Beijing’s backtrack on Xinjiang detention camps spurred.",
@@ -34,9 +59,9 @@ export default function LatestFromUs() {
 
     return (
         <div className="px-5 jdm:px-10 mt-30">
-            <div className="flex flex-row justify-between pb-6 border-b border-journalist-border-default">
+            <div className="flex flex-row justify-between pb-6 border-b border-journalist-border-default mb-4">
                 <h1 className="text-md font-medium">Latest From Us</h1>
-                <h1 className="text-journalist-red-error font-medium underline text-md">See More</h1>
+                <h1 onMouseEnter={handleEnter} onMouseLeave={handleLeave} className="text-journalist-red-error font-medium text-md cursor-pointer relative">See More <span className="underlineAnim absolute left-0 bottom-0 h-0.5 w-full bg-journalist-red-error"></span></h1>
             </div>
 
             <div className="flex flex-col gap-4 jdl:mb-40">

@@ -1,6 +1,8 @@
 import type { LatestNewsCardProps } from "../types/types"
 import LatestNewsCard from "../components/LatestNewsCard"
 import { useState } from "react"
+import gsap from "gsap"
+import { useGSAP } from "@gsap/react"
 
 import LatestNews_1 from "../assets/png/news_1.png"
 import LatestNews_2 from "../assets/png/news_2.png"
@@ -16,6 +18,18 @@ export default function LatestNews() {
     const [selectedCountry, setSelectedCountry] = useState<string>("Country")
     const [isDateOpen, setIsDateOpen] = useState<boolean>(false)
     const [selectedDate, setSelectedDate] = useState<string>("Date")
+
+    useGSAP(() => {
+        gsap.from(".latestAnim", {
+            y: 50,
+            opacity: 0,
+            stagger: 0.2,
+            scrollTrigger: {
+                trigger: ".latestAnim",
+                start: "top 80%",
+            },
+        })
+    })
 
     const LatestNewsList: LatestNewsCardProps[] = [
         {
@@ -99,7 +113,7 @@ export default function LatestNews() {
             <div className="mb-10 flex flex-col jdm:flex-row gap-4 items-end">
                 <div className="relative flex-2 w-full jdm:mt-4">
                     <img src={Search} alt="" className="absolute top-1/2 -translate-y-1/2" />
-                    <input type="text" placeholder="Search" className="w-full py-4.25 pl-15 border rounded-xl border-journalist-border-default" />
+                    <input type="text" placeholder="Search" className="w-full outline-none py-4.25 pl-15 border rounded-xl border-journalist-border-default" />
                 </div>
                 <div className="flex flex-row w-full jdm:w-auto gap-2 mt-4 jdm:mt-0">
                     <div className="relative flex-1 jdm:max-w-36">
@@ -142,7 +156,7 @@ export default function LatestNews() {
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-1 jdm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="latestAnim grid grid-cols-1 jdm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {LatestNewsList.map((item, i) => (
                     <div key={i}>
                         <LatestNewsCard image={item.image} title={item.title} desc={item.desc} name={item.name} theme={item.theme} location={item.location} />

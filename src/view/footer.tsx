@@ -28,7 +28,7 @@ export default function Footer() {
                         <h2 className="text-sm font-medium text-journalist-gray-text mb-4">Follow Us</h2>
                         <div className="flex flex-row gap-2">
                             {linkList.map((item, i) => (
-                                <div key={i} className="p-4 rounded-full border border-b-journalist-border-icon w-fit">
+                                <div key={i} className="p-4 rounded-full border border-b-journalist-border-icon w-fit hover:scale-115 transition-all duration-300">
                                     <img src={item} alt="" />
                                 </div>
                             ))}
