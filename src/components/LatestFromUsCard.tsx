@@ -46,14 +46,14 @@ export default function LatestFromUsCard({title, desc, image, date, name, jabata
     }
 
     useGSAP(() => {
-        const elements = document.querySelectorAll(".scrambleAnim")
+        const elements = document.querySelectorAll<HTMLElement>(".scrambleAnim")
         const titleElements = document.querySelectorAll(".titleAnim")
 
-        elements.forEach((el) => {
+        elements.forEach((el: HTMLElement) => {
             gsap.to(el, {
             duration: 2,
             scrambleText: {
-                text: el.textContent,
+                text: el.textContent ?? "",
                 chars: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",
                 delimiter: ""
             },
